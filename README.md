@@ -13,7 +13,6 @@ The workspace is organized as multiple Java projects:
 - `JDBC`: JDBC practice setup and module structure.
 - `mypro`: Additional modular Java practice project.
 
-The `navya` folder is intentionally excluded from Git tracking.
 
 ## Key Topics Covered
 
