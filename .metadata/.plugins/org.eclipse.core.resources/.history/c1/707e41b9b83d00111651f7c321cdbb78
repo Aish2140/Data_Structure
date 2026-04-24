@@ -1,0 +1,68 @@
+package CustomCollection;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Objects;
+
+class Student{
+	private int id;
+	private String name;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Student(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+	public Student() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+//	public String toString() {
+//		// TODO Auto-generated method stub
+//		return id+" "+name+" ";
+//	}
+	
+//	public int hashCode() {
+//		return Objects.hash(id, name);
+//	}
+//	@Override
+//	public boolean equals(Object obj) {
+//		if (this == obj)
+//			return true;
+//		if (obj == null)
+//			return false;
+//		if (getClass() != obj.getClass())
+//			return false;
+//		Student other = (Student) obj;
+//		return id == other.id && Objects.equals(name, other.name);
+//	}
+	
+	
+}
+
+public class AddElementToset {
+	public static void main(String[] args) {
+		Student s1=new Student(1,"Aishwarya");
+		Student s2=new Student(1,"Aishwarya");
+		//Student s2=new Student(2,"Naveenya");
+	    HashSet set = new HashSet();
+	    set.add(s1);
+	    set.add(s2);
+	    System.out.println(set);
+	     
+	}
+	
+
+}

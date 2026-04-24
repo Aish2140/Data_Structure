@@ -1,0 +1,45 @@
+package Sorting;
+
+/*Time Complexity of binarySearch is O(log n)
+BS only works for sorted array and if array not sorted
+then sorting itself takes O(n log n) so total complexity will be
+O(n log n+log n)..So if array is not sorted just use linear search 
+which takes O(n).*/
+import java.util.Scanner;
+
+public class BinarySearch {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int n=scanner.nextInt();
+		int arr[]=new int[n];
+		for (int i = 0; i < arr.length; i++) {
+			arr[i]=scanner.nextInt();
+		}
+		int k=scanner.nextInt();
+		System.out.println(binarySearch(arr,k));
+	}
+
+	private static int binarySearch(int[] arr,int k) {
+      int low=0;
+      int high=arr.length-1;
+      int mid=0;
+      while(low<=high)
+      {
+    	  mid=(low+high)/2;
+    	  if(arr[mid]==k)
+    	  {
+    		  return mid;
+    	  }
+    	  else if(k<arr[mid])
+    	  {
+    		  high=mid-1;
+    	  }
+    	  else {
+    		  low=mid+1;
+    	  }
+      }
+       return -1 ;
+	}
+
+
+}

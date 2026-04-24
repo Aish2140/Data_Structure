@@ -1,0 +1,17 @@
+package project;
+
+public class stringg {
+	public static void main(String[] args) {
+		String s1="AISHWARYA BOKI";
+	
+		 char[] arr = new char[100];
+		 s1.getChars(0, 5, arr, 0);
+		System.out.println(arr);
+	String	s2=s1.concat(" world");
+		System.out.println(s2);
+		
+	  
+		
+	}
+
+}

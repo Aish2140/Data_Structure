@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Parking_System {
+	public static void main(String[] args) {
+		
+	
+
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter the number of hours: ");
+	int n=sc.nextInt();
+	
+		if(n>=0&&n<=2)
+		{
+			System.out.println("Total parking fee: "+100);
+		}
+		else if(n>2&&n<=5)
+		{
+			System.out.println("Total parking fee: "+100+(n-2)*50);
+	     }
+		else if(n>5)
+		{
+			System.out.println("Total parking fee: " +(100+3*50+(n-5)*20));
+		}
+		else{
+			System.out.println("Invalid Input");
+		}
+	}
+	
+	}
+
+	
+	
+
+

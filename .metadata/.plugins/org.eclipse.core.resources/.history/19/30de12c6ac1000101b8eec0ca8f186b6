@@ -1,0 +1,14 @@
+package project;
+
+public class stringg {
+	public static void main(String[] args) {
+		String s1="AISHWARYA BOKI";
+	
+		 char[] buffer = new char[100];
+		System.out.println(s1.getChars(0, 5, 4, 3));
+		
+	  
+		
+	}
+
+}

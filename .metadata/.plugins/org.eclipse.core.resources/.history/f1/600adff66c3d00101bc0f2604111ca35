@@ -1,0 +1,33 @@
+package abcd;
+
+	import javax.swing.*;
+	import java.awt.*;
+	import java.awt.event.*;
+	public class newme {
+
+	    public void main(String[] args) {
+	        JFrame frame = new JFrame("User Info");
+	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	        frame.setSize(400, 300);
+	        frame.getContentPane().setBackground(Color.PINK);
+	        frame.setLayout(new FlowLayout());
+
+	        JTextField nameField = new JTextField(15);
+	        JTextField phoneField = new JTextField(15);
+	        JButton button1 = new JButton("Button 1");
+	        JButton button2 = new JButton("Button 2");
+
+	        frame.add(new JLabel("Name:"));
+	        frame.add(nameField);
+	        frame.add(new JLabel("Phone:"));
+	        frame.add(phoneField);
+	        frame.add(button1);
+	        frame.add(button2);
+
+	        frame.getContentPane().setBackground(Color.NAVY);
+
+	        frame.setVisible(true);
+	    }
+	}
+
+}

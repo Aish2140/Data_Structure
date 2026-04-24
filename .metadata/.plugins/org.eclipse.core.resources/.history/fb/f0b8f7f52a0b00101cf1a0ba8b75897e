@@ -1,0 +1,12 @@
+package aish;
+
+public class Demm {
+
+	public static void main(String[] args) {
+		String s="Aishwarya baby";
+		//contains(), indexOf(),lastIndexOf()
+		boolean result = s.contains("baby");
+		System.out.println(result);
+	}
+
+}

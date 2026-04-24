@@ -1,0 +1,37 @@
+package TapDriveQuestion;
+
+import java.util.Scanner;
+//take the single string having multiple words separated by comma and print the words 
+//which have more than 2 count
+public class Test1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String[] arr=sc.nextLine().split(" ");
+		for (int i = 0; i < arr.length; i++) {
+			if(vowelsCount(arr[i])) {
+				System.out.println(arr[i]);
+			}
+			else {
+				System.out.println("No VOwels");
+			}
+		}
+	}
+
+	private static boolean vowelsCount(String s) {
+		int count=0;
+		for (int i = 0; i < s.length(); i++) {
+			char ch=s.charAt(i);
+			if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u') {
+				count++;
+			}
+		}
+		if(count>=2) {
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	
+}

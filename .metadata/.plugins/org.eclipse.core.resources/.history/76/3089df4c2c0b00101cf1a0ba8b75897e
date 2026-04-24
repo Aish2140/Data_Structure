@@ -1,0 +1,20 @@
+package aish;
+
+public class Demm {
+
+	public static void main(String[] args) {
+		String s="Aishwarya baby";
+		//contains(), indexOf(),lastIndexOf()
+		System.out.println(s.contains("baby"));
+		System.out.println(s.indexOf('b'));
+System.out.println(s.lastIndexOf('b'));
+	
+	//replace(),replaceAll()
+	String s1 = s.replace("baby", "darling");
+	System.out.println(s1);
+	System.out.println(s.toLowerCase());
+	
+	s.split(" ");
+	}
+
+}

@@ -1,0 +1,45 @@
+package CustomCollection;
+
+import java.util.ArrayList;
+
+class Student{
+	private int id;
+	private String name;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Student(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+	public Student() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}
+
+public class AddElementToset {
+	public static void main(String[] args) {
+		Student s1=new Student(1,"Aishwarya");
+		Student s2=new Student(2,"Naveenya");
+	     ArrayList al = new ArrayList();
+	     al.add(s1);
+	     al.add(s2);
+	     System.out.println(al);
+	     
+	}
+	
+
+}

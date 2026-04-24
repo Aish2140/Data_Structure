@@ -1,0 +1,14 @@
+package project;
+
+public class stringg {
+	public static void main(String[] args) {
+		int b=127;
+		int c=34;
+	float	d= b * c;
+	System.out.println(c);
+	//	
+	  
+		
+	}
+
+}
